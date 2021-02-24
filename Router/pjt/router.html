@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Router</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+     * {
+       box-sizing: border-box;
+     }
+
+     body {
+       margin: 0;
+       background-color:#C0C0C0;
+     }
+
+     .header {
+       background-color: #C0C0C0;
+       padding: 20px;
+       text-align: center;
+     }
+
+     .topnav {
+       overflow: hidden;
+       background-color: Navy;
+     }
+
+     .topnav a {
+       float: left;
+       display: block;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+     }
+
+
+     .topnav a:hover {
+       background-color: Lightgrey ;
+       color: black;
+     }
+
+     .header2{
+               text-align: center;
+     }
+     .header3{
+               text-align: center;
+     }
+     .header4{
+               text-align: center;
+     }
+     .header5{
+               text-align: center;
+     }
+     .header6{
+               text-align: center;
+     }
+     .header7{
+               text-align: center;
+     }
+
+     .footer {
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: Navy;
+         padding: 8px;
+         color: white;
+         text-align: center;
+     }
+
+     </style>
+   </head>
+
+   <body>
+     <div class="topnav">
+       <a href="../../index.html">Home</a>
+       <a href="../../IP/site/IP.html">IP</a>
+       <a href="router.html">Router</a>
+       <a href="../../VLAN/site3/LAN.html">VLAN</a>
+     </div>
+
+     <div class="header">
+       <h1>Router</h1>
+     </div>
+
+     <img width="1538" height="600" src="xyz12.jpg" alt="networking">
+
+     <div class="header2">
+       <p><big>A router receives and sends data on computer networks. Routers are sometimes confused with network hubs, modems, or network switches. However, routers can combine the functions of these components, and connect with these devices, to improve Internet access</big><p>
+     </div>
+
+     <div class="header3">
+        <h1 style="color:white;background:Navy;padding:22px;">Types of Routing</h1>
+        <h3><b><big>Static Routing</big></b></h3>
+        <ul><big>
+          <li>Filling Unknown NID in IP Table</li>
+          <br/>
+          <li>Used in smaller network(e.g for 10-20 computers)</li>
+        </big></ul>
+
+        <br/>
+        <br/>
+
+
+       <h3><b><big>Dynamic Routing</big></b></h3>
+       <ul><big>
+          <li>Filing known NID in IP Table</li>
+          <br/>
+          <li>Used in large network</li>
+       </big></ul>
+
+     </div>
+
+     <div class="header4">
+       <h1 style="color:white;background:Navy;padding:22px;">Router Ports</h1>
+       <p><big>Ports of a router are classified on the basis of functionality</big></p>
+       <ol><big>
+          <li>Interface Port</li>
+          <li>Line Port</li>
+       </big></ol>
+       <br/>
+       <p><big><b>Interface Port</b>-  Used to connect the router with another devices (switch, router, pc).</big><p>
+       <br/>
+       <h3><big>Types</big></h3>
+         <ul><big>
+          <li>Ethernet Interface > Old and slow</li>
+          <br/>
+          <li>Fast ethernet Interface > New & fast  >connect router to switch</li>
+          <br/>
+          <li>Gigabitethernet Interface > Advance</li>
+          <br/>
+          <li>Serial Interface > Router to router</li>
+        </big></ul>
+          <br/>
+         <p><big><b>Line Port</b> - used to configure the router</big><p>
+         <br/>
+         <h3><big>Types</big></h3>
+         <br/>
+         <ul><big>
+          <li>Console Port > direct configuration</li>
+          <br/>
+          <li>Auxiliary Port > remotely configuration</li>
+        </big></ul>
+          <img width="1538" height="600" src="xyz13.jpg" alt="networking">
+     </div>
+
+     <div class="header5">
+        <h1 style="color:white;background:Navy;padding:22px;">Router Rules</h1>
+        <p><big><b>Rule 1 :</b> All interfaces of a router should be in different network or should have different NID.</big></p>
+        <img width="1538" height="600" src="xyz14.jpg" alt="networking">
+        <p><big><b>Rule 2 :</b> A serial interface connecting two router should be in same network or should have same NID.</big></p>
+        <img width="1538" height="600" src="xyz15.jpg" alt="networking">
+     </div>
+
+     <div class="header6">
+        <h1 style="color:white;background:Navy;padding:22px;">Connecting Router to Pc using CPT</h1>
+        <h3><big> Steps to be followed </big></h3>
+        <br/>
+        <ol><big>
+         <li>Drag and place a Router(ISR4321), switch and a PC on workspace</li>
+         <br/>
+         <li> connect all of them</li>
+         <br/>
+         <li>Assign an IP to the PC</li>
+         <br/>
+         <li>Then attach  NIM-2T Port from modules to the Router in physical tab(After switching of the power button)</li>
+         <br/>
+         <li>After that, turn on the power button and go to CLI tab</li>
+         <br/>
+         <li> then type the command given below </li>
+       </big></ol>
+         <img  src="cmd.png" alt="networking">
+         <br/>
+         <p><big> Above Connection will appear like:</big></p>
+         <br/>
+         <img  src="xyz16.jpg" alt="networking">
+         <br/>
+
+     </div>
+
+     <div class="header7">
+        <h1 style="color:white;background:Navy;padding:22px;">Dynamic Routing</h1>
+          <ul><big>
+            <li>Used for known networks / in realtime scenario</li>
+            <li>Types</li>
+          </big></ul>
+
+         <ol><big>
+           <li>Distance Vector Protocol (Routing Information Protocol) </li>
+           <li>Link State Protocol (Open Shortest Path First)</li>
+           <li>Advance Distance Vector Protocol (Enhanced Interior Gateway Protocol)</li>
+         </big></ol>
+         <br/>
+         <br/>
+         <ul><big>
+           <li>All the above routing protocols will identify best path in different way.<li>
+           <li>This is based on METRIC( based on what criteria best path is identified).<li>
+           <li>Based on purpose, we use any one of routing protocol.<li>
+         </big></ul>
+         <br/>
+         <br/>
+         <img src="router13.png" alt="networking">
+
+
+     </div>
+
+     <div class="footer">
+     <footer>
+         <p><small>jatinsaini40@gamil.com</small></p>
+     <p><small>© 2021 NetworkSecurity Inc. All rights reserved.</small></P>
+
+     </footer>
+
+
+ </body>
+
+  </html>
